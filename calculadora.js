@@ -35,12 +35,15 @@ document.querySelector("#display").innerText=e.target.innerText;
 })
 btnOpResta.addEventListener("click", (e)=>{
 operacion="-"
+document.querySelector("#display").innerText=e.target.innerText;
 })
 btnOpDivision.addEventListener("click", (e)=>{
     operacion="/"
+    document.querySelector("#display").innerText=e.target.innerText;    
     })
 btnOpMultiplicacion.addEventListener("click", (e)=>{
     operacion="*"
+    document.querySelector("#display").innerText=e.target.innerText;    
     })  
 btnNum2.addEventListener("click", (e)=>{
     document.querySelector("#display").innerText=e.target.innerText;
