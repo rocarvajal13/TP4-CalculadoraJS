@@ -36,10 +36,10 @@ document.querySelector("#display").innerText=e.target.innerText;
 btnOpResta.addEventListener("click", (e)=>{
 operacion="-"
 })
-btnDivision.addEventListener("click", (e)=>{
+btnOpDivision.addEventListener("click", (e)=>{
     operacion="/"
     })
-btnMultiplicacion.addEventListener("click", (e)=>{
+btnOpMultiplicacion.addEventListener("click", (e)=>{
     operacion="*"
     })  
 btnNum2.addEventListener("click", (e)=>{
@@ -80,8 +80,7 @@ btnNum0.addEventListener("click", (e)=>{
 })
 
 
-
-btnigual.addEventListener("click", ()=>{
+btnOpIgual.addEventListener("click", ()=>{
 const total=calculadora(valor1,valor2,operacion);
 document.querySelector("#display").innerText=total;
 valor1=total;
