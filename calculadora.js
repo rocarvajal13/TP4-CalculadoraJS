@@ -16,6 +16,8 @@ const btnNum8=document.querySelector("#btnNum8")
 const btnNum9=document.querySelector("#btnNum9")
 const btnNum0=document.querySelector("#btnNum0")
 const btnOpIgual=document.querySelector("#btnigual") 
+const btnDivision=document.querySelector("#btndivision") 
+const btnMultiplicacion=document.querySelector("#btnmultiplicacion")    
 function asignarValor(valor){
     if(!operacion || !valor1){
         valor1=valor;
@@ -34,6 +36,12 @@ document.querySelector("#display").innerText=e.target.innerText;
 btnOpResta.addEventListener("click", (e)=>{
 operacion="-"
 })
+btnDivision.addEventListener("click", (e)=>{
+    operacion="/"
+    })
+btnMultiplicacion.addEventListener("click", (e)=>{
+    operacion="*"
+    })  
 btnNum2.addEventListener("click", (e)=>{
     document.querySelector("#display").innerText=e.target.innerText;
     asignarValor(Number(e.target.innerText));
