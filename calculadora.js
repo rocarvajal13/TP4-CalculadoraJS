@@ -16,8 +16,8 @@ const btnNum8=document.querySelector("#btnNum8")
 const btnNum9=document.querySelector("#btnNum9")
 const btnNum0=document.querySelector("#btnNum0")
 const btnOpIgual=document.querySelector("#btnigual") 
-const btnDivision=document.querySelector("#btndivision") 
-const btnMultiplicacion=document.querySelector("#btnmultiplicacion")    
+const btnOpDivision=document.querySelector("#btnOpDivision") 
+const btnOpMultiplicacion=document.querySelector("#btnOpMultiplicacion")    
 function asignarValor(valor){
     if(!operacion || !valor1){
         valor1=valor;
